@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Horta Medicinal Inteligente</title>
+<link rel="stylesheet" href="style.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+</head>
+<body>
+<button id="temaBtn">🌙 Modo Escuro</button>
+<div class="container">
+<h1>🌿 Horta Medicinal Inteligente</h1>
+<input type="text" id="pesquisa" placeholder="Digite um sintoma...">
+<button onclick="buscarSintoma()">Pesquisar</button>
+<div id="resultado"></div>
+<hr>
+<h2>Imagem da Erva</h2>
+<img id="imagemErva" width="250">
+<hr>
+<h2>QR Code do Site</h2>
+<div id="qrcode"></div>
+<hr>
+<h2>Adicionar Nova Erva</h2>
+<input id="novoSintoma" placeholder="Sintoma">
+<input id="novoCha" placeholder="Chá indicado">
+<input id="novaImagem" placeholder="URL da imagem">
+<button onclick="salvarNovaErva()">Salvar</button>
+<hr>
+<h2>Pergunte sobre ervas</h2>
+<input id="pergunta" placeholder="Ex: Chá para ansiedade?">
+<button onclick="responderPergunta()">Perguntar</button>
+<div id="chatResposta"></div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
