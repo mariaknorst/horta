@@ -16,7 +16,7 @@ document.getElementById('imagemErva').src=ervas[t].img;
 if(typeof QRCode!=='undefined'){new QRCode(document.getElementById('qrcode'),window.location.href);}
 function salvarNovaErva(){alert('Exemplo salvo');}
 function responderPergunta(){document.getElementById('chatResposta').innerHTML='Consulta educativa sobre ervas.';}
-document.getElementById('temaBtn').onclick=function(){document.body.classList.toggle('dark');};
+document.getElementById('temaBtn').onclick=function(){document.body.classList.toggle('dark');
 "diabetes":{cha:"Chá de Canela"},
 "pressao alta":{cha:"Chá de Hibisco"},
 "pressao baixa":{cha:"Chá de Alecrim"},
@@ -83,4 +83,4 @@ document.getElementById('temaBtn').onclick=function(){document.body.classList.to
 "dor de ouvido":{cha:"Chá de Alho"},
 "dor de dente":{cha:"Chá de Cravo"},
 "aftas":{cha:"Chá de Sálvia"},
-"gastrite":{cha:"Chá de Espinheira-Santa"}
+"gastrite":{cha:"Chá de Espinheira-Santa"}; }
